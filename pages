@@ -1,1 +1,8 @@
+import streamlit as st
+import pandas as pd
 
+st.title("데이터 개요")
+
+df = pd.read_csv("data/seoul_water_data.csv")
+
+st.dataframe(df)
